@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/DB_USER
+    Value: 'admin'
+    Description: DB_USER - {{ stack_group_config.environment }}
+stack_tags:
