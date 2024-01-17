@@ -23,20 +23,6 @@ pipeline {
                 }
             }
         }
-
-        stage('Build'){
-            steps {
-                script {
-                    echo "GIT_BRANCH: ${GIT_BRANCH}"
-                    sh """
-                        npm i
-                        cd lambdaLayer/lib/nodejs
-                        npm i
-                    """
-                }
-            }
-        }
-
         stage('Omni Deploy'){
             when {
                 anyOf {
