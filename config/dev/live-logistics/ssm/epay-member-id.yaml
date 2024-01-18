@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/EPAY_MEMBER_ID
+    Value: '29961'
+    Description: EPAY_MEMBER_ID - {{ stack_group_config.environment }}
+stack_tags:

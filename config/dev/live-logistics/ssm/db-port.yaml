@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/DB_PORT
+    Value: '3306'
+    Description: DB_PORT - {{ stack_group_config.environment }}
+stack_tags:

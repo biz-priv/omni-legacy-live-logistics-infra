@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/DB_HOST
+    Value: '34.204.208.232'
+    Description: DB_HOST - {{ stack_group_config.environment }}
+stack_tags:
