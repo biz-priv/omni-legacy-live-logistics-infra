@@ -37,7 +37,7 @@ pipeline {
             steps {
                 withAWS(credentials: 'omni-aws-creds'){
                     sh """
-                    sceptre launch ${env.ENVIRONMENT}
+                    sceptre launch ${env.ENVIRONMENT} --yes
                     """
                 }
             }
