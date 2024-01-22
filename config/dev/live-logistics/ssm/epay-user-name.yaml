@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/EPAY_USER_NAME
+    Value: 'LLINTEGRATION'
+    Description: EPAY_USER_NAME - {{ stack_group_config.environment }}
+stack_tags:
