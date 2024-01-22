@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/EPAY_TRANSGET_URL
+    Value: https://epaymanager.com/cgi-bin/xmlrpc/trans_get
+    Description: EPAY_TRANSGET_URL - {{ stack_group_config.environment }}
+stack_tags:
