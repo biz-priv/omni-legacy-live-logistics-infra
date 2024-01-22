@@ -1,0 +1,7 @@
+template:
+  path: ssm/parameter.yaml
+parameters:
+    Name: /omni-epay-integration/{{ stack_group_config.environment }}/DB_DATABASE
+    Value: 'dw_prod'
+    Description: DB_DATABASE - {{ stack_group_config.environment }}
+stack_tags:
