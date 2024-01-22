@@ -2,6 +2,6 @@ template:
   path: ssm/parameter.yaml
 parameters:
     Name: /omni-epay-integration/{{ stack_group_config.environment }}/EPAY_AP_TRANSACTION_STATUS_TABLE_NAME
-    Value: 'dw_uat.epay_ap_transaction_status'
+    Value: 'dw_prod.epay_ap_transaction_status'
     Description: EPAY_AP_TRANSACTION_STATUS_TABLE_NAME - {{ stack_group_config.environment }}
 stack_tags:
